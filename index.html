@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demo
+        </title>
+        <link rel="stylesheet" type="text/css"  href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <div class="hidden-wrapper">
+            <div class="sections-wrapper">
+                <div class="section">
+                    <p style="font-size: larger; font-weight: 700;">Section 1 : How to join us</p>
+                    Our offices are present throughout the world . Access appropriate address from website.
+                </div>
+                <div class="section">
+                    <p style="font-size: larger; font-weight: 700;">Section 2 : After joining us</p>
+                    After joining us , weekly meetings will take place.
+                </div>
+                <div class="section">
+                    <p style="font-size: larger; font-weight: 700;">Section 3 : Thank you</p>
+                    We hope everyone can give their best
+                </div>
+            </div>
+            
+
+           
+        </div>
+        
+        <div class="first-wrapper">
+            <div class="nav">
+                <div class="left-nav">
+                    <div class="demo">demo</div>
+                </div>
+                <div class="right-nav">
+                    <a class="home" href="#">home</a>
+                    <a class="about-us" href="#">About</a>
+                    <a class="join-us" href="#">Join</a>
+                    <a class="contact" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="welcome-block">
+                    <div class="welcome-text">Let's <br> make the<br>world a <br> better place</div>
+            </div>
+        </div>
+        <p class="title">Protect Planet Earth</p>
+        <div class="overlap-wrapper">
+            <div class="description-wrapper">
+                <div class="description-text">It doesn't matter where you are from the world, if we don't take the next step earth is doomed.</div>
+                <div class="description-image"></div>
+            </div>
+            <div class="hiring-wrapper">
+                <div class="hiring-images-wrapper">
+                    <div class="hiring-image-1"></div>
+                    <div class="hiring-image-2"></div>
+                </div>
+                <div class="hiring-text">We are hiring people throughout the world to take that next step. Let's plant trees and make this world a much better place.</div>
+            </div>
+        </div>
+
+        <script>
+            
+            function myFunction(event) {
+              let hiddenWrapper = document.querySelector('.hidden-wrapper');
+              hiddenWrapper.classList.toggle("hidden-wrapper-appear");
+              event.classList.toggle("change");
+
+            }
+
+            </script>
+    </body>
+</html>

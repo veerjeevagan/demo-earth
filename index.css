@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: FreeMono, monospace;
+    overflow-x: hidden;
+}
+
+.first-wrapper{
+    background-color: black;
+    background-image: url("earthrotating.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 3vhvh;
+    width: 100vw;
+    padding: 1%;
+    color: white;
+}
+
+.left-nav{
+    flex:2;
+}
+
+.right-nav{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 1%;
+    
+}
+
+.welcome-block{
+    height: 70vh;
+    padding: 23vh 12vw;
+    
+}
+
+.welcome-text{
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width:100%;
+    font-size: 3em;
+    
+}
+
+.title{
+    font-size: 3em;
+    font-weight: 700;
+    margin: 12vh 0 4vh 0;
+    text-align: center;
+}
+.description-wrapper{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    padding: 6%;
+    margin:4vh;
+}
+
+.description-text{
+    flex:2;
+    text-align: left;
+    padding:4% 10%;
+    font-size: 1.5em;
+}
+
+.description-image{
+    flex: 1;
+    background-image: url("earth.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.hiring-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.hiring-images-wrapper{
+    margin:6vh;
+    content: ' ';
+    display: table;
+    clear: both;
+    /* display: flex;
+    flex-direction: row;
+    padding: 6%; */
+}
+
+.hiring-image-1{
+    background-image: url("planting.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding-left: 2%; */
+    margin-left: 22%;
+    height:50vh;
+    width: 50vw;
+    float: left;
+    border-radius: 5%;
+    margin-right: -100%;
+}
+
+.hiring-image-2{
+    background-image: url("leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-left: 2%; */
+    width: 30vw;
+    height: 30vh;
+    border-radius: 5%;
+    float: right;
+    margin-top: 15%;
+    margin-right: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.hiring-text{
+    
+    color: black;
+    /* padding:4% 10%; */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4% 10%;
+}
+
+.menu {
+    cursor: pointer;
+    position: fixed;
+    right: 0%;
+    top:50%;
+    margin: 2%;
+    z-index: 2;
+    
+  }
+  
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    border: rgb(59, 59, 59) solid 0.2px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 9px);
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -10px);
+  }
+
+  a:link{
+      text-decoration: none;
+  }
+  a{
+      color: white;
+  }
+
+.hidden-wrapper {
+    content: "";
+    
+    overflow-x: hidden;
+    transition: transform 1s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -webkit-transform: skew(0deg) scaleX(0) translateX(100px);
+    transform: skew(0deg) scaleX(0) translateX(100px);
+    -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+    transform-origin: top right;
+    height: 100%;
+    width: 100%;
+}
+
+
+.hidden-wrapper-appear {
+    position: absolute;
+    overflow-x: hidden;
+    
+    -webkit-transform: skew(-10deg) scaleX(1) translateX(0vw);
+    transform: skew(-10deg) scaleX(1) translateX(0vw);
+    transition: transform 1s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transform:skew(0deg);
+    background-color: rgb(39, 180, 133);
+}
+
+
+.sections-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    display: none;
+}
+
+.hidden-wrapper-appear>.sections-wrapper{
+    display: block;
+}
+
+p{
+    margin: 3%;
+}
+.section {
+    text-align: center;
+    margin: 3%;
+}
+
+@media screen and (max-width:790px) {
+
+    .welcome-block{
+        height: 60vh;
+        padding: 23vh 12vw;
+        
+    }
+    .left-nav{
+        flex: 1;
+    }
+    .right-nav{
+        flex:2;
+    }
+}
