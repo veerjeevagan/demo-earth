@@ -259,14 +259,39 @@ p{
     }
 
     .hiring-image-1{
-        margin-bottom: 0%;
+        display: block;
+        margin: 0% auto;
+        height: 200px;
+        width: 300px;
 
     }
 
     .hiring-image-2{
-        margin-top: 0%;
-        margin-left: auto;
+        display: block;
+        margin: 0% auto;
+        background-size:contain ;
+        height: 300px;
+        width: 300px;
 
     }
 }
 
+@media screen and (max-width:470px) {
+    .right-nav{
+        display: none;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .description-text{
+        font-size: 1.2em;
+    }
+
+    .hiring-text{
+        font-size: 1.2em;
+    }
+}
